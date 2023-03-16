@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JagoIT</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">Kelas</a></li>
+              <li><a href="#">Alur Belajar</a></li>
+              <li><a href="#">Boootcamp</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="top-wrapper">
+        <div class="container">
+            <div class="text-wrapper">
+                <div class="text">
+                    <h1>Kuasai Skill Digital Raih Suksesmu</h1>
+                    <p>Belajar dengan metode bootcamp "from zero to hero" dan gabung bersama 21.000+ alumni bootcamp <br>Start your Journey Today</p>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn alur">Alur Belajar</a>
+                        <a href="#" class="btn karir">Panduan Karir</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="./src/header.svg" alt="main heading">
+            </div>
+        </div>
+    </div>
+    <div class="konten-main">
+        <div class="containerr">
+            <div class="headingg">
+                <h2>Rekomendasi Untuk Anda</h2>
+                <h1>Pelajari Skills Baru</h1>
+                <h1>Sesuai Dengan Minat Anda</h1>
+            </div>
+
+            <div class="article">
+                <div class="konten">
+                    <a href="#"><img
+                            src="https://myskill.id/blog/wp-content/uploads/2021/09/1-Mengenal-Profesi-UIUX-Designer-1024x653.jpg"></a>
+                    <div class="judul">
+                        <a href="#">UI/UX Design</a>
+                    </div>
+                    <p>UI designer adalah orang yang mendesain tampilan antarmuka sebuah aplikasi atau perangkat. Secara teknis, antarmuka yang
+                    terdapat dalam UI designer berkaitan dengan grafis, tata letak, dan aspek desain fisik dari sebuah aplikasi. Sementara
+                    UX designer adalah orang yang mendesain pengalaman pengguna.</p>
+                </div>
+                <div class="konten">
+                    <a href="#"><img
+                            src="https://aqi.co.id/wp-content/uploads/2021/10/Apa-Itu-Full-Stack-Developer.jpg"></a>
+                    <div class="judul">
+                        <a href="#">Full Stack Developer</a>
+                    </div>
+                    <p>full stack developer adalah developer yang merangkap beberapa tugas sekaligus. Umumnya mereka dikenal familiar dan
+                    fleksibel untuk mengerjakan tugas-tugas dalam front end development dan back end development.</p>
+                </div>
+                <div class="konten">
+                    <a href="#"><img src="https://blog.skillacademy.com/hubfs/data-scientist-adalah.jpg"></a>
+                    <div class="judul">
+                        <a href="#">Data Scientist</a>
+                    </div>
+                    <p>Data Scientist memprediksi masa depan menggunakan pengolahan data. Algoritma Machine Learning membangun sebuah model
+                    berdasarkan data untuk mengenali dan mengklasifikasikan pola dalam data yang kemudian digunakan untuk memprediksi apa
+                    yang akan terjadi di masa depan menggunakan keterampilan statistik dan programming.</p>
+                </div>
+                <div class="konten">
+                    <a href="#"><img src="https://a.storyblok.com/f/96206/6720x4480/9408ef5b87/ucd-pa-graphic-design-art-2.jpg"></a>
+                    <div class="judul">
+                        <a href="#">Graphic Design</a>
+                    </div>
+                    <p>Graphic designer (desainer grafis) merupakan sebuah pekerjaan menciptakan ilustrasi, tipografi, fotografi, atau grafis
+                    motion baik untuk penerbit maupun media cetak dan elektronik. Seorang graphic designer bertanggung jawab atas tampilan
+                    pada media promosi suatu produk. Tugasnya menyampaikan informasi mengenai suatu produk secara menarik dengan
+                    mengakomodasi keinginan klien.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="joinform">
+            <div class="logo-form"><img src="./src/undraw_career_progress_ivdb.svg"></div>
+                <div class="title-form">Ready to Build Your Future?</div>
+                <p>Belajar langsung dari mentor berpengalaman di bidangnya tanpa batas waktu</p>
+                <a class="btn-join" onclick="toggleForm()">Join Sekarang</a>        
+            </div>
+        <div class="register" id="register">
+                <form>
+                    <div class="form-control">
+                        <label>Nama</label>
+                        <input type="text">
+                        <label>Minat Kelas</label>
+                        <select name="minat">
+                            <option value="#">Pilih Salah Satu</option>
+                            <option value="ui_ux">UI UX Designer</option>
+                            <option value="front_enddev">Front End Developer</option>
+                            <option value="back_enddev">Back End Developer</option>
+                            <option value="fullstackdev">Fullstack Developer</option>
+                        </select>
+                        <label>Status</label>
+                        <select name="status">
+                            <option value="#">Pilih Salah Satu</option>
+                            <option value="tidak_bekerja">Tidak Bekerja</option>
+                            <option value="mahasiswa">Mahasiswa</option>
+                            <option value="wirausaha">Wirausaha</option>
+                            <option value="fg">Fresh Graduate</option>
+                            <option value="sedang_bekerja">Sedang Bekerja</option>
+                        </select>
+                        <label>Email</label>
+                        <input type="email">
+                        <button type="buttons" class="btn-form1">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+<footer>
+    <div class="footer-logo">JagoIT
+        <p>Kuasai skill digitalmu</p>
+        <p>dan raih suksesmu.</p>
+    </div>
+    <div class="footer-list">
+        <ul>
+            <h3>Kompani</h3>
+            <li>Karier</li>
+            <li>Tentang Kami</li>
+            <li>Partner</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+    <div class="footer-list">
+        <ul>
+            <h3>Layanan</h3>
+            <li>Kelas</li>
+            <li>Paket</li>
+            <li>Webinar</li>
+            <li>Bantuan</li>
+        </ul>
+    </div>
+    <div class="footer-list">
+        <ul>
+            <h3>Panduan</h3>
+            <li>Syarat dan Ketentuan</li>
+            <li>Kebijakan Privasi</li>
+        </ul>
+    </div>
+    <div class="footer-list">
+        <ul>
+            <h3>Komunitas</h3>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ul>
+    </div>
+</footer>
+<script>
+    function toggleForm() {
+        var form = document.getElementById("register");
+        if (form.style.height === "0px" || form.style.height === "") {
+            form.style.height = form.scrollHeight + "px";
+        } else {
+            form.style.height = "0px";
+        }
+    }
+</script>
+</html>

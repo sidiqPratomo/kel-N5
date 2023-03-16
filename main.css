@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width:100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/*Header*********************************************************/
+header {
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* Ubah position ke fixed, dan top ke 0 */
+  position: fixed;
+  top: 0;
+  /* Ubah z-index ke 10 */
+  z-index:10;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-family: monstserrat;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+/*HEADING*****************************************************/
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url("./src/background.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.top-wrapper .text{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.top-wrapper .text h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper .text p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+    font-size:20px;
+  }
+
+
+.top-wrapper img{
+    width: 100%;
+}
+
+.btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .alur{
+    background-color: #11408b;
+    margin-right: 10px;
+  }
+
+  .karir{
+    background-color: #3b5998;
+  }
+
+/*MAIN*************************************/
+  .konten-main {
+    height: auto;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f6f8fd;
+  }
+
+  .containerr {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .headingg {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    color: #34364a;
+  }
+
+  .headingg h2{
+    font-weight: normal;
+    color: #47bb8e;
+  }
+
+  .article {
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid #f7f7f7;
+    text-align: center;
+  }
+
+  .article p {
+    padding: 5px 6px 5px 5px;
+    line-height: 1.5;
+  }
+
+  .konten {
+    width: 23.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid white;
+    float: left;
+  }
+
+  .isi {
+    width: 98.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid white;
+    float: left;
+  }
+
+  .isi .judul {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .isi p {
+    margin-top: 0;
+  }
+
+  .isi img {
+    float: left;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .konten img {
+    width: 95.8%;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+
+  }
+
+  .konten:hover {
+    opacity: 0.9;
+
+  }
+
+  .konten .judul a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    color: #020101;
+  }
+
+  .konten a:hover {
+    opacity: 0.9;
+  }
+
+/*FORMULIR********************************************/
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.joinform{
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 50px;
+  
+}
+.logo-form img{
+  width: 250px;
+  height: 250px;
+}
+.title-form{
+  font-size: 40px;
+  font-weight: 800;
+}
+.joinform p{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.joinform a{
+  margin-bottom: 50px;
+}
+.btn-join{
+  font-size: 16px;
+  border-radius: 20px;
+  border:2px solid #3E54AC;
+  background-color: #fff;
+  color: #3E54AC;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-family: Poppins;
+  box-shadow: 0 5px #3E54AC;
+  margin-bottom: 50px;
+}
+.btn-join:hover{
+  border: 2px solid #fff;
+  background-color: #3E54AC;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-join:active {
+box-shadow: none;
+position: relative;
+top: 5px;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 2px solid #3E54AC;
+}
+.form-control input,select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #3E54AC;
+}
+.register{
+  max-width: 450px;
+  margin: auto;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s;
+  border: none;
+}
+.btn-form1{
+  max-width: 100px;
+  margin: auto;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 2px solid #3E54AC;
+  background-color: #fff;
+  color: #3E54AC;
+  padding: 4px 18px;
+  font-weight: 600;
+  font-family: Poppins;
+  margin-top: 20px;
+}
+.btn-form1:hover {
+  border: 2px solid #fff;
+  background-color: #3E54AC;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*FOOTER*********************************************/
+footer {
+  background-color: #000080;
+  color: #fff;
+  height: 200px;
+  padding: 50px;
+  font-family: "Avenir Next"
+}
+
+footer li{
+    list-style: none;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+  padding-right: 300px;
+}
+
+.footer-list {
+  float: left;
+  padding-right: 40px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.footer-list li:hover {
+  padding: 10px;
+  color: yellow;
+  cursor: pointer;
+}
